@@ -103,7 +103,7 @@ def get_parameters():
 
     model_save_dir = os.path.join('./model/save', dataset)
     os.makedirs(name=model_save_dir, exist_ok=True)
-    model_save_path = model_name + '_' + gso_type + '_' + str(K) + '_order' + str(beta) + '_beta' + '.pth'
+    model_save_path = model_name + '_' + gso_type + '_' + str(K) + '_order_' + str(beta) + '_beta' + '.pth'
     model_save_path = os.path.join(model_save_dir, model_save_path)
 
     return device, dataset, model_name, gso_type, lr, weight_decay, enable_bias, K, beta, epochs, opt, patience, model_save_path
