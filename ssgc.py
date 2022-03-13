@@ -44,7 +44,7 @@ def get_parameters():
     parser.add_argument('--beta', type=float, default=0, \
                         help='A hyperparameter for balancing between local and global graph information')
     parser.add_argument('--lr', type=float, default=0.01, help='learning rate')
-    parser.add_argument('--weight_decay', type=float, default=0.0001, help='weight decay (L2 penalty)')
+    parser.add_argument('--weight_decay', type=float, default=0.001, help='weight decay (L2 penalty)')
     parser.add_argument('--enable_bias', type=bool, default=True, help='default as True')
     parser.add_argument('--epochs', type=int, default=10000, help='epochs, default as 10000')
     parser.add_argument('--opt', type=str, default='adam', help='optimizer, default as adam')
